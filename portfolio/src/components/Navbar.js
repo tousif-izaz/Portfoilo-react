@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
@@ -22,7 +23,7 @@ const Navbar = () => {
     return (
         <nav className="flex justify-between items-center p-6 bg-white dark:bg-black dark:text-white shadow-md">
             {/* Logo */}
-            <div className="text-2xl font-bold">TI</div>
+            <Link to="/" className="text-2xl font-bold" >TI</Link>
 
             {/* Navigation Links */}
             <ul className="flex space-x-8 text-lg">

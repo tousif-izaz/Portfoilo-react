@@ -1,6 +1,6 @@
 import { ReactTyped } from "react-typed";
 
-import profilePic from "../assets/dp.jpg"; // Update the path accordingly
+import profilePic from "../assets/dp.jpg"; 
 
 
 const HomePage = () => {

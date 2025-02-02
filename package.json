@@ -1,6 +1,5 @@
 {
-  "homepage": "https://tousif-izaz.github.io/portfolio-react/portfolio",
-  "name": "portfolio",
+  "homepage": "https://tousif-izaz.github.io/Portfolio-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

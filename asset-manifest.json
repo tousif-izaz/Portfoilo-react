@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio-react/static/css/main.e2da5608.css",
-    "main.js": "/Portfolio-react/static/js/main.6c0ba7d7.js",
-    "static/media/dp.jpg": "/Portfolio-react/static/media/dp.75c58f961c9ce0fb81ec.jpg",
-    "index.html": "/Portfolio-react/index.html",
-    "main.e2da5608.css.map": "/Portfolio-react/static/css/main.e2da5608.css.map",
-    "main.6c0ba7d7.js.map": "/Portfolio-react/static/js/main.6c0ba7d7.js.map"
+    "main.css": "/Portfoilo-react/static/css/main.5e72337d.css",
+    "main.js": "/Portfoilo-react/static/js/main.d03de8bc.js",
+    "static/media/cafe.jpg": "/Portfoilo-react/static/media/cafe.ae2658750cc8e2ad4b3e.jpg",
+    "static/media/dataviz.jpg": "/Portfoilo-react/static/media/dataviz.cd1b44acb3bc32aaf7c1.jpg",
+    "static/media/backend.jpg": "/Portfoilo-react/static/media/backend.f13ad3903df0828a4f92.jpg",
+    "static/media/pr.jpg": "/Portfoilo-react/static/media/pr.18df1c405bf94eeb85ce.jpg",
+    "static/media/dp.jpg": "/Portfoilo-react/static/media/dp.75c58f961c9ce0fb81ec.jpg",
+    "static/media/Tousif_Izaz_resume.pdf": "/Portfoilo-react/static/media/Tousif_Izaz_resume.2ae9175039ec5d8ea7e6.pdf",
+    "static/media/Tousif_Izaz_resume_ML.pdf": "/Portfoilo-react/static/media/Tousif_Izaz_resume_ML.153a7b4253a3b1ea3f7c.pdf",
+    "static/media/turtlebot.jpeg": "/Portfoilo-react/static/media/turtlebot.bef4849a56974fb0d15c.jpeg",
+    "index.html": "/Portfoilo-react/index.html",
+    "main.5e72337d.css.map": "/Portfoilo-react/static/css/main.5e72337d.css.map",
+    "main.d03de8bc.js.map": "/Portfoilo-react/static/js/main.d03de8bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2da5608.css",
-    "static/js/main.6c0ba7d7.js"
+    "static/css/main.5e72337d.css",
+    "static/js/main.d03de8bc.js"
   ]
 }

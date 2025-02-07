@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <nav className="flex space-x-6">
-          {["About Me", "Projects", "Resume", "Contact"].map((item, index) => (
+          {["home", "Projects", "Contact"].map((item, index) => (
             <a 
               key={index}
               href={`${item.toLowerCase().replace(/\s+/g, "")}`} 

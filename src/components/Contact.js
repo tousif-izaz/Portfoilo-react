@@ -5,27 +5,30 @@ import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 const Contact = () => {
     const form = useRef();
     const [messageSent, setMessageSent] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setError(null);
 
-        emailjs
-            .sendForm(
-                "service_gmk3d1h", 
-                "template_6bx1d8k", 
+        try {
+            const result = await emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
                 form.current,
-                "YOVRiVxSVRM5qPWvgxC" 
-            )
-            .then(
-                (result) => {
-                    console.log("Success:", result.text);
-                    setMessageSent(true);
-                    form.current.reset();
-                },
-                (error) => {
-                    console.log("Error:", error.text);
-                }
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY 
             );
+            console.log("Success:", result.text);
+            setMessageSent(true);
+            form.current.reset();
+        } catch (error) {
+            console.error("Error:", error.text);
+            setError("Failed to send message. Please try again.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -36,6 +39,12 @@ const Contact = () => {
                 {messageSent && (
                     <p className="text-green-500 text-center mb-4">
                         ✅ Message sent successfully! I'll get back to you soon.
+                    </p>
+                )}
+
+                {error && (
+                    <p className="text-red-500 text-center mb-4">
+                        ❌ {error}
                     </p>
                 )}
 
@@ -60,11 +69,13 @@ const Contact = () => {
                         required
                         className="p-3 border border-gray-300 rounded-lg dark:bg-gray-800 dark:text-white h-32"
                     ></textarea>
+                    
                     <button
                         type="submit"
-                        className="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-300 transition duration-300"
+                        disabled={loading}
+                        className={`px-4 py-2 rounded-lg transition duration-300 ${loading ? "bg-gray-500 cursor-not-allowed" : "bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-300"}`}
                     >
-                        Send Message
+                        {loading ? "Sending..." : "Send Message"}
                     </button>
                 </form>
 
@@ -86,3 +97,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

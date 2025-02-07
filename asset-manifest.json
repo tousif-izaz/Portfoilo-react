@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfoilo-react/static/css/main.5e72337d.css",
-    "main.js": "/Portfoilo-react/static/js/main.d03de8bc.js",
+    "main.css": "/Portfoilo-react/static/css/main.5e9dd50c.css",
+    "main.js": "/Portfoilo-react/static/js/main.57f14b75.js",
     "static/media/cafe.jpg": "/Portfoilo-react/static/media/cafe.ae2658750cc8e2ad4b3e.jpg",
     "static/media/dataviz.jpg": "/Portfoilo-react/static/media/dataviz.cd1b44acb3bc32aaf7c1.jpg",
     "static/media/backend.jpg": "/Portfoilo-react/static/media/backend.f13ad3903df0828a4f92.jpg",
@@ -11,11 +11,11 @@
     "static/media/Tousif_Izaz_resume_ML.pdf": "/Portfoilo-react/static/media/Tousif_Izaz_resume_ML.153a7b4253a3b1ea3f7c.pdf",
     "static/media/turtlebot.jpeg": "/Portfoilo-react/static/media/turtlebot.bef4849a56974fb0d15c.jpeg",
     "index.html": "/Portfoilo-react/index.html",
-    "main.5e72337d.css.map": "/Portfoilo-react/static/css/main.5e72337d.css.map",
-    "main.d03de8bc.js.map": "/Portfoilo-react/static/js/main.d03de8bc.js.map"
+    "main.5e9dd50c.css.map": "/Portfoilo-react/static/css/main.5e9dd50c.css.map",
+    "main.57f14b75.js.map": "/Portfoilo-react/static/js/main.57f14b75.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e72337d.css",
-    "static/js/main.d03de8bc.js"
+    "static/css/main.5e9dd50c.css",
+    "static/js/main.57f14b75.js"
   ]
 }

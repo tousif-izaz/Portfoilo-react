@@ -7,9 +7,10 @@ const categories = [
 ];
 
 const categorizedProjects = {
-  "AI & ML": ["AI Image Classifier", "Vision Transformer Model"],
-  "Web Development": ["E-commerce Platform"],
-  "Embedded Systems": ["TurtleBot Navigation"]
+  "AI & ML": ["Vision Transformer Model", "Covid-19 Donation Project"],
+  "Web Development": ["FriendMe Backend Development"],
+  "Embedded Systems": ["TurtleBot Navigation"],
+  "Business": ["Breaking Bistro"]
 };
 
 const ProjectsPage = () => {
@@ -25,7 +26,7 @@ const ProjectsPage = () => {
       <h1 className="text-4xl font-bold text-center text-black dark:text-white mb-6">Projects</h1>
       
       {/* Category Dropdown */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-left mb-6 dark:text-white">
         <select
           className="px-4 py-2 bg-white dark:bg-gray-800 border rounded-md"
           value={selectedCategory}

@@ -1,8 +1,11 @@
 {
+  "homepage":"https://tousif-izaz.github.io/Portfoilo-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "cra-template": "1.2.0",
+    "framer-motion": "^12.4.1",
     "portfolio": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -14,6 +17,8 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
